@@ -1,0 +1,91 @@
+/* Custom styles for the piano school website */
+.hero-gradient {
+  background: linear-gradient(135deg, #ff7b00 0%, #ff9500 25%, #ffb347 50%, #ffd700 75%, #ff7b00 100%);
+}
+
+.orange-gradient {
+  background: linear-gradient(135deg, #ff7b00 0%, #ff9500 50%, #ffb347 100%);
+}
+
+.warm-gradient {
+  background: linear-gradient(135deg, #fff5e6 0%, #ffe4cc 50%, #ffd4b3 100%);
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.piano-keys {
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #f8f8f8 50%,
+    #ffffff 100%
+  );
+  border: 1px solid #ddd;
+}
+
+.piano-keys::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 14.28%;
+  width: 8%;
+  height: 60%;
+  background: #333;
+  z-index: 1;
+}
+
+.piano-keys::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 28.56%;
+  width: 8%;
+  height: 60%;
+  background: #333;
+  z-index: 1;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.music-note {
+  animation: musicNote 2s ease-in-out infinite;
+}
+
+@keyframes musicNote {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-5px) rotate(2deg);
+  }
+  75% {
+    transform: translateY(5px) rotate(-2deg);
+  }
+}
+
