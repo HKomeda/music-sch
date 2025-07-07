@@ -128,9 +128,9 @@ const Testimonials = () => {
                       </span>
                     </div>
                     <div className="prose prose-gray max-w-none">
-                      {testimonial.content.split('\n\n').map((paragraph, pIndex) => (
-                        <p key={pIndex} className="text-gray-600 mb-4 leading-relaxed">
-                          {paragraph}
+                      {testimonial.content.split('\n').map((line, pIndex) => (
+                        <p key={pIndex} className="text-gray-600 mb-3 leading-relaxed">
+                          {line}
                         </p>
                       ))}
                     </div>
