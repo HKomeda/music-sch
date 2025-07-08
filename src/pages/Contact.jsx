@@ -291,18 +291,7 @@ const Contact = () => {
                   <MapPin className="w-5 h-5 text-orange-600 mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-semibold text-gray-900">レッスン会場</p>
-                    <p className="text-gray-600">グランピアノレンタルスペース</p>
-                    <a 
-                      href="https://granpiano.jp/access" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-orange-600 hover:text-orange-700 font-semibold text-sm inline-flex items-center mt-1"
-                    >
-                      詳しいアクセスはこちら
-                      <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                      </svg>
-                    </a>
+                    <p className="text-gray-600">詳細はお問い合わせください</p>
                   </div>
                 </div>
                 
