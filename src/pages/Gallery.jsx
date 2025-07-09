@@ -8,42 +8,16 @@ const Gallery = () => {
   const images = [
     {
       id: 1,
-      src: '/images/piano-lesson-1.jpg',
-      alt: '大人のピアノレッスン風景',
+      src: '/images/lesson_scene_senior.png',
+      alt: 'レッスン風景シニア',
       category: 'adult',
-      title: '大人のピアノレッスン',
-      description: 'リラックスした雰囲気の中で、大人の方のペースに合わせたレッスンを行っています。'
-    },
-    {
-      id: 2,
-      src: '/images/piano-lesson-2.jpg',
-      alt: '子供のピアノレッスン風景',
-      category: 'children',
-      title: '子供のピアノレッスン',
-      description: 'お子様の成長に合わせて、楽しく音楽を学んでいただいています。'
-    },
-    {
-      id: 3,
-      src: '/images/piano-lesson-3.jpg',
-      alt: '幼児のピアノレッスン風景',
-      category: 'children',
-      title: '幼児のピアノレッスン',
-      description: '3歳からのお子様も、遊び感覚で音楽に親しんでいただけます。'
-    },
-    {
-      id: 4,
-      src: '/images/piano-lesson-4.jpg',
-      alt: '個別指導の様子',
-      category: 'adult',
-      title: '個別指導',
-      description: 'マンツーマンレッスンで、一人ひとりに最適な指導を行います。'
+      title: 'レッスン風景シニア',
+      description: '生徒さんと講師が笑顔でレッスンに取り組んでいます。'
     }
   ];
 
   const categories = [
-    { id: 'all', name: 'すべて', icon: Camera },
-    { id: 'children', name: '子供レッスン', icon: Music },
-    { id: 'adult', name: '大人レッスン', icon: Music }
+    { id: 'all', name: 'すべて', icon: Camera }
   ];
 
   const filteredImages = selectedCategory === 'all' 
@@ -87,27 +61,7 @@ const Gallery = () => {
         </div>
       </section>
 
-      {/* Category Filter */}
-      <section className="py-12 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {categories.map((category) => (
-              <button
-                key={category.id}
-                onClick={() => setSelectedCategory(category.id)}
-                className={`flex items-center px-6 py-3 rounded-full font-semibold transition-all duration-300 ${
-                  selectedCategory === category.id
-                    ? 'bg-orange-600 text-white shadow-lg'
-                    : 'bg-gray-100 text-gray-700 hover:bg-orange-100 hover:text-orange-600'
-                }`}
-              >
-                <category.icon className="w-5 h-5 mr-2" />
-                {category.name}
-              </button>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* Gallery Grid */}
       <section className="pb-20 bg-white">
